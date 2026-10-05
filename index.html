@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fòkhe'ezheb</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/Vòkhá'ábzhá.svg">
+        <h1>Fòkhe'ezheb</h1>
+    </header>
+    <main>
+        <div class="spacer"></div>
+        <p>Fòkhe'ezheb is an in-progress conlang project by StRaight From Hell intended to be artistic and semi-naturalistic. 
+            It is a more mdern variant of Vòkhá'ábzhá. 
+        </p>
+        <a href="phonology.html">Phonology</a>
+        <a href="grammar/overview.html">Grammar</a>
+        <a href="orthography.html">Orthography</a>
+        <a href="dictionary/dictionary.html">Dictionary</a>
+        <a href="numbers/overview.html">Numbers & Math</a>
+        <a href="#">Cultural Terms & Phrases</a>
+        <hr>
+        <h2>Timeline<button id="historyBtn" onclick="show('history')">^</button></h2>
+        <div id="history" style="display: none;">
+            <h3>Old Vòkhá'ábzhá</h3>
+            <p>Very little is documented of this era, but some guesses can be made about the phonotactics & grammar.</p>
+            <h3>Transitional Vòkhá'ábzhá</h3>
+            <p>Refers to the period where articles, other particles, & some sounds start to be obselite</p>
+            <h3>Pre-French Modern (you are here)</h3>
+            <p>The brief period where most of the changes settled before French intervention in the East.</p>
+            <h3>Vocat Flanseizə</h3>
+            <p>Some French explorers settled down on the Eastern part of the island. Over time the Vòkhá'ábzhá-French pidgin evolved 
+                into its own language.
+            </p>
+            <h3>Fəked.zheb</h3>
+            <p>In the West Vòkhá'ábzhá got to evolve on its own into the modern Fəked.zheb.</p>
+        </div>
+        <hr>
+        <!-- <h2>Additional Worldbuilding Information<button id="worldbuildingBtn" onclick="show('worldbuilding')">^</button></h2>
+        <div id="worldbuilding" style="display: none;">
+            <p>Vòkhá'ábzhá is a primarily isolated language spoken on an island in the Atlantic; somewhere between Greenland, Ireland, 
+                and Eastern Canada. This island is called Pkərròntubzhá. Despite Pkərròntubzhá's diminutive landmass, it has many lakes 
+                and rivers, which lead to water's importance in Vòkhá'ábzhá.
+            </p>
+        </div> -->
+    </main>
+
+    <script>
+        function show(section){
+            var part = document.getElementById(section);
+            var btn = document.getElementById(section+"Btn");
+            if (part.style.display == "block"){ 
+                part.style.display = "none";
+                btn.style.rotate = "0deg";
+            }else{
+                part.style.display = "block";
+                btn.style.rotate = "-180deg";
+            }
+        }
+    </script>
+</body>
+</html>
