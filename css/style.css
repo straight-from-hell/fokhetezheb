@@ -8,7 +8,7 @@ body{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 
-  background: darkslateblue;
+  background: indigo;
   color: lavender;
 }
 
@@ -33,7 +33,7 @@ h1{
   corner-shape: bevel;
   border-bottom: 10px solid mediumorchid;
   padding-bottom: 1em;
-  box-shadow: 0px 15px 12px darkslateblue;
+  box-shadow: 0px 15px 12px indigo;
   /* outline-top: 500px solid midnightblue; doesn't work, need new method*/
 }
 main{
@@ -77,14 +77,14 @@ td{
 
 i{
   font-style: normal;
-  color: magenta;
+  color: darkmagenta;
 }
 
 a{
-  color: slateblue;
+  color: darkmagenta;
 }
 a:hover{
-  color: azure;
+  color: lavender;
 }
 
 .entry a{
